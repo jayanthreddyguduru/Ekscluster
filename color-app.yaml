@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: green-container
-        image: 357171621133.dkr.ecr.us-east-1.amazonaws.com/green:latest
+        image: 660467200926.dkr.ecr.us-east-1.amazonaws.com/green:latest
         ports:
             - containerPort: 80
         resources:
@@ -49,7 +49,7 @@ spec:
     spec:
       containers:
       - name: blue-container
-        image: 357171621133.dkr.ecr.us-east-1.amazonaws.com/green:latest
+        image: 660467200926.dkr.ecr.us-east-1.amazonaws.com/green:latest
         ports:
             - containerPort: 80
         resources:
@@ -76,7 +76,7 @@ spec:
     spec:
       containers:
       - name: yellow-container
-        image: 357171621133.dkr.ecr.us-east-1.amazonaws.com/yellow:latest
+        image: 660467200926.dkr.ecr.us-east-1.amazonaws.com/yellow:latest
         ports:
             - containerPort: 80
         resources:
