@@ -1,0 +1,170 @@
+C:\Users\jayan\Desktop\EKS Cluster>terraform plan       
+module.eks.module.kms.data.aws_partition.current: Reading...
+module.eks.data.aws_partition.current: Reading...
+data.aws_availability_zones.available: Reading...
+data.aws_availability_zones.azs: Reading...
+module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-075279330da3e311f]
+module.eks.module.eks_managed_node_group["two"].data.aws_caller_identity.current: Reading...
+module.eks.module.eks_managed_node_group["one"].data.aws_caller_identity.current: Reading...
+module.eks.aws_cloudwatch_log_group.this[0]: Refreshing state... [id=/aws/eks/EKS-Cluster-test/cluster]
+module.eks.module.kms.data.aws_caller_identity.current: Reading...
+module.eks.data.aws_caller_identity.current: Reading...
+module.eks.module.kms.data.aws_partition.current: Read complete after 0s [id=aws]
+module.eks.data.aws_partition.current: Read complete after 0s [id=aws]
+module.eks.module.eks_managed_node_group["two"].data.aws_partition.current: Reading...
+module.eks.module.eks_managed_node_group["one"].data.aws_partition.current: Reading...
+module.eks.module.eks_managed_node_group["two"].data.aws_partition.current: Read complete after 0s [id=aws]
+module.eks.module.eks_managed_node_group["one"].data.aws_partition.current: Read complete after 0s [id=aws]
+module.eks.module.eks_managed_node_group["two"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+module.eks.module.eks_managed_node_group["one"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+module.eks.module.eks_managed_node_group["two"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=1734879000]
+module.eks.module.eks_managed_node_group["one"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=1734879000]
+module.eks.data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+module.eks.module.eks_managed_node_group["two"].aws_iam_role.this[0]: Refreshing state... [id=node-group-2-eks-node-group-20230221011737714600000002]
+module.eks.data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=1530481229]
+module.eks.module.eks_managed_node_group["one"].aws_iam_role.this[0]: Refreshing state... [id=node-group-1-eks-node-group-20230221011737714600000001]
+module.eks.module.eks_managed_node_group["two"].data.aws_caller_identity.current: Read complete after 1s [id=660467200926]
+module.eks.data.aws_caller_identity.current: Read complete after 1s [id=660467200926]
+module.eks.module.kms.data.aws_caller_identity.current: Read complete after 1s [id=660467200926]
+module.eks.data.aws_iam_session_context.current: Reading...
+module.eks.data.aws_iam_session_context.current: Read complete after 0s [id=arn:aws:iam::660467200926:user/Jayanth-test]
+module.eks.aws_iam_role.this[0]: Refreshing state... [id=EKS-Cluster-test-cluster-20230221011933860600000003]
+module.eks.module.eks_managed_node_group["one"].data.aws_caller_identity.current: Read complete after 1s [id=660467200926]
+data.aws_availability_zones.available: Read complete after 1s [id=us-east-1]
+module.vpc.aws_eip.nat[0]: Refreshing state... [id=eipalloc-0c98054780a0849d5]
+data.aws_availability_zones.azs: Read complete after 1s [id=us-east-1]
+module.eks.module.eks_managed_node_group["one"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=node-group-1-eks-node-group-20230221011737714600000001-2023022101173996070000000b]
+module.eks.module.eks_managed_node_group["one"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=node-group-1-eks-node-group-20230221011737714600000001-2023022101173990770000000a]
+module.eks.module.eks_managed_node_group["two"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=node-group-2-eks-node-group-20230221011737714600000002-20230221011739640900000007]
+module.eks.module.eks_managed_node_group["two"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=node-group-2-eks-node-group-20230221011737714600000002-20230221011739691700000008]
+module.eks.module.eks_managed_node_group["two"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"]: Refreshing state... [id=node-group-2-eks-node-group-20230221011737714600000002-20230221011739626900000006]
+module.eks.module.eks_managed_node_group["one"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"]: Refreshing state... [id=node-group-1-eks-node-group-20230221011737714600000001-20230221011739903400000009]
+module.eks.aws_iam_role_policy_attachment.this["AmazonEKSVPCResourceController"]: Refreshing state... [id=EKS-Cluster-test-cluster-20230221011933860600000003-20230221011935680700000004]
+module.eks.aws_iam_role_policy_attachment.this["AmazonEKSClusterPolicy"]: Refreshing state... [id=EKS-Cluster-test-cluster-20230221011933860600000003-20230221011935967900000005]
+module.eks.module.kms.data.aws_iam_policy_document.this[0]: Reading...
+module.eks.module.kms.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=1519519764]
+module.eks.module.kms.aws_kms_key.this[0]: Refreshing state... [id=3724ce93-f7e1-40d5-a69b-61deea75b1bf]
+aws_security_group.all_worker_mgmt: Refreshing state... [id=sg-02f4e753e76505a4a]
+aws_security_group.worker_group_mgmt_one: Refreshing state... [id=sg-05c2927648f48af88]
+aws_security_group.worker_group_mgmt_two: Refreshing state... [id=sg-08e59aa3204f9f06d]
+module.vpc.aws_route_table.private[0]: Refreshing state... [id=rtb-046d43f20d33220a4]
+module.eks.aws_security_group.cluster[0]: Refreshing state... [id=sg-0b887e7eaacd9fd68]
+module.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-01c073b440cc1fd62]
+module.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-0b2f5fba3a524fc1b]
+module.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-02c8037e39b0ce35e]
+module.eks.aws_security_group.node[0]: Refreshing state... [id=sg-089d51651cb416ecf]
+module.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-0d9db7da11079de30]
+module.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-0d1329acfe77764b0]
+module.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-0672b02bf898af59e]
+module.eks.module.kms.aws_kms_alias.this["cluster"]: Refreshing state... [id=alias/eks/EKS-Cluster-test]
+module.eks.aws_iam_policy.cluster_encryption[0]: Refreshing state... [id=arn:aws:iam::660467200926:policy/EKS-Cluster-test-cluster-ClusterEncryption20230221011951116900000006]
+module.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-02c8037e39b0ce35e1080289494]
+module.eks.aws_security_group_rule.node["ingress_cluster_4443_webhook"]: Refreshing state... [id=sgrule-361134745]
+module.eks.aws_security_group_rule.node["ingress_cluster_443"]: Refreshing state... [id=sgrule-501067729]
+module.eks.aws_security_group_rule.node["egress_all"]: Refreshing state... [id=sgrule-1456760785]
+module.eks.aws_security_group_rule.node["ingress_nodes_ephemeral"]: Refreshing state... [id=sgrule-1909117033]
+module.eks.aws_security_group_rule.node["ingress_cluster_kubelet"]: Refreshing state... [id=sgrule-1626949146]
+module.eks.aws_security_group_rule.node["ingress_self_coredns_tcp"]: Refreshing state... [id=sgrule-789463904]
+module.eks.aws_security_group_rule.node["ingress_self_coredns_udp"]: Refreshing state... [id=sgrule-1957568335]
+module.eks.aws_security_group_rule.node["ingress_cluster_8443_webhook"]: Refreshing state... [id=sgrule-812113618]
+module.eks.aws_security_group_rule.node["ingress_cluster_9443_webhook"]: Refreshing state... [id=sgrule-1422322971]
+module.eks.aws_security_group_rule.cluster["ingress_nodes_443"]: Refreshing state... [id=sgrule-1743532617]
+module.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-09817b18c56b129f1]
+module.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-02c5da9ea486d75b7]
+module.vpc.aws_nat_gateway.this[0]: Refreshing state... [id=nat-09271c73d8876e2de]
+module.eks.aws_iam_role_policy_attachment.cluster_encryption[0]: Refreshing state... [id=EKS-Cluster-test-cluster-20230221011933860600000003-20230221011952254000000007]
+module.vpc.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-087ed53df88a46741]
+module.vpc.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-04cbe5eece471c8bb]
+module.eks.aws_eks_cluster.this[0]: Refreshing state... [id=EKS-Cluster-test]
+module.vpc.aws_route.private_nat_gateway[0]: Refreshing state... [id=r-rtb-046d43f20d33220a41080289494]
+module.eks.data.tls_certificate.this[0]: Reading...
+module.eks.module.eks_managed_node_group["one"].aws_launch_template.this[0]: Refreshing state... [id=lt-0901f30e1c44c44e8]
+module.eks.module.eks_managed_node_group["two"].aws_launch_template.this[0]: Refreshing state... [id=lt-0e72cbe28deb4e28e]
+module.eks.module.eks_managed_node_group["two"].aws_eks_node_group.this[0]: Refreshing state... [id=EKS-Cluster-test:node-group-2-20230221024915419900000001]
+module.eks.module.eks_managed_node_group["one"].aws_eks_node_group.this[0]: Refreshing state... [id=EKS-Cluster-test:node-group-1-2023022101313180670000000e]
+module.eks.data.tls_certificate.this[0]: Read complete after 1s [id=29dc9b1fd282516f6dd8d02143f33bbea24134e2]
+module.eks.aws_iam_openid_connect_provider.oidc_provider[0]: Refreshing state... [id=arn:aws:iam::660467200926:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/6DBDBD5B97FCA612F65227FDF5075D44]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration and found no differences, so no changes are needed.
+
+C:\Users\jayan\Desktop\EKS Cluster>terraform list state
+Terraform has no command named "list". Did you mean "test"?
+
+To see all of Terraform's top-level commands, run:
+  terraform -help
+
+
+C:\Users\jayan\Desktop\EKS Cluster>terraform state list                                 
+data.aws_availability_zones.available
+data.aws_availability_zones.azs
+aws_security_group.all_worker_mgmt
+aws_security_group.worker_group_mgmt_one
+aws_security_group.worker_group_mgmt_two
+module.eks.data.aws_caller_identity.current
+module.eks.data.aws_iam_policy_document.assume_role_policy[0]
+module.eks.data.aws_iam_session_context.current
+module.eks.data.aws_partition.current
+module.eks.data.tls_certificate.this[0]
+module.eks.aws_cloudwatch_log_group.this[0]
+module.eks.aws_eks_cluster.this[0]
+module.eks.aws_iam_openid_connect_provider.oidc_provider[0]
+module.eks.aws_iam_policy.cluster_encryption[0]
+module.eks.aws_iam_role.this[0]
+module.eks.aws_iam_role_policy_attachment.cluster_encryption[0]
+module.eks.aws_iam_role_policy_attachment.this["AmazonEKSClusterPolicy"]
+module.eks.aws_iam_role_policy_attachment.this["AmazonEKSVPCResourceController"]
+module.eks.aws_security_group.cluster[0]
+module.eks.aws_security_group.node[0]
+module.eks.aws_security_group_rule.cluster["ingress_nodes_443"]
+module.eks.aws_security_group_rule.node["egress_all"]
+module.eks.aws_security_group_rule.node["ingress_cluster_443"]
+module.eks.aws_security_group_rule.node["ingress_cluster_4443_webhook"]
+module.eks.aws_security_group_rule.node["ingress_cluster_8443_webhook"]
+module.eks.aws_security_group_rule.node["ingress_cluster_9443_webhook"]
+module.eks.aws_security_group_rule.node["ingress_cluster_kubelet"]
+module.eks.aws_security_group_rule.node["ingress_nodes_ephemeral"]
+module.eks.aws_security_group_rule.node["ingress_self_coredns_tcp"]
+module.eks.aws_security_group_rule.node["ingress_self_coredns_udp"]
+module.vpc.aws_eip.nat[0]
+module.vpc.aws_internet_gateway.this[0]
+module.vpc.aws_nat_gateway.this[0]
+module.vpc.aws_route.private_nat_gateway[0]
+module.vpc.aws_route.public_internet_gateway[0]
+module.vpc.aws_route_table.private[0]
+module.vpc.aws_route_table.public[0]
+module.vpc.aws_route_table_association.private[0]
+module.vpc.aws_route_table_association.private[1]
+module.vpc.aws_route_table_association.public[0]
+module.vpc.aws_route_table_association.public[1]
+module.vpc.aws_subnet.private[0]
+module.vpc.aws_subnet.private[1]
+module.vpc.aws_subnet.public[0]
+module.vpc.aws_subnet.public[1]
+module.vpc.aws_vpc.this[0]
+module.eks.module.eks_managed_node_group["one"].data.aws_caller_identity.current
+module.eks.module.eks_managed_node_group["one"].data.aws_iam_policy_document.assume_role_policy[0]
+module.eks.module.eks_managed_node_group["one"].data.aws_partition.current
+module.eks.module.eks_managed_node_group["one"].aws_eks_node_group.this[0]
+module.eks.module.eks_managed_node_group["one"].aws_iam_role.this[0]
+module.eks.module.eks_managed_node_group["one"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"]
+module.eks.module.eks_managed_node_group["one"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"]
+module.eks.module.eks_managed_node_group["one"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"]
+module.eks.module.eks_managed_node_group["one"].aws_launch_template.this[0]
+module.eks.module.eks_managed_node_group["two"].data.aws_caller_identity.current
+module.eks.module.eks_managed_node_group["two"].data.aws_iam_policy_document.assume_role_policy[0]
+module.eks.module.eks_managed_node_group["two"].data.aws_partition.current
+module.eks.module.eks_managed_node_group["two"].aws_eks_node_group.this[0]
+module.eks.module.eks_managed_node_group["two"].aws_iam_role.this[0]
+module.eks.module.eks_managed_node_group["two"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"]
+module.eks.module.eks_managed_node_group["two"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"]
+module.eks.module.eks_managed_node_group["two"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"]
+module.eks.module.eks_managed_node_group["two"].aws_launch_template.this[0]
+module.eks.module.kms.data.aws_caller_identity.current
+module.eks.module.kms.data.aws_iam_policy_document.this[0]
+module.eks.module.kms.data.aws_partition.current
+module.eks.module.kms.aws_kms_alias.this["cluster"]
+module.eks.module.kms.aws_kms_key.this[0]
+
+C:\Users\jayan\Desktop\EKS Cluster>
